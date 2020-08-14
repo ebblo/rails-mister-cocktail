@@ -2,6 +2,7 @@
   <%= simple_form_for @cocktail do |f| %>
     <h1> <%= f.label 'Cocktail' %> </h1>
     <%= f.input :name, label: false, placeholder: 'cocktail' %>
+    <%= f.input :img, label: false, placeholder: 'cocktail' %>
     <%= f.submit "Submit name", class: "btn btn-primary" %>
   <% end %>
 </div>
