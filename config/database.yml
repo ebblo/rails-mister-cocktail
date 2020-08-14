@@ -78,6 +78,19 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: rails-mister-cocktail_development
+
+test:
+  <<: *default
+  database: rails-mister-cocktail_test
+
 production:
   <<: *default
   database: rails_mister_cocktail_production

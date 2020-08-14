@@ -1,9 +1,15 @@
-<h1>Cocktails</h1>
+<div id="index">
+  <h1>Cocktails</h1>
 
-<ul>
-  <% @cocktails.each do |cocktail| %>
-    <%= link_to cocktail.name, cocktail_path(cocktail) %>
-  <% end %>
-</ul>
+  <div class="card" style="width: 18rem;">
+    <% @cocktails.each do |cocktail| %>
+    <img class="card-img-top" src="https://i.ytimg.com/vi/c6GV_vRlIIA/maxresdefault.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail) %></h5>
+    </div>
+    <% end %>
+  </div>
 
-<%= link_to 'Create your own cocktail', cocktails_new_path %>
+  <button type="button" class="btn btn-primary btn-sm"> <%= link_to 'Create your own cocktail', cocktails_new_path %> </button>
+
+</div>

@@ -2,3 +2,21 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
+
+h1 {
+  text-align: center;
+}
+
+#index {
+  text-align: center;
+}
+
+#new {
+  color: white;
+}
+
+.card {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
